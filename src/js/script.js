@@ -1,3 +1,7 @@
-window.onload =  function() {
-    console.log('Hello world!');
-}
+angular.module('playground', [
+    'ui.router',
+    'playground.helloworld',
+])
+.config(['$urlRouterProvider', function($urlRouterProvider) {
+    $urlRouterProvider.otherwise('/');
+}]);
