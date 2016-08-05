@@ -7,5 +7,5 @@ gulp.task('build:js', function() {
     return gulp.src(['src/js/**/*.js',])
         .pipe(gulp_concat('app.min.js'))
         .pipe(gulp_uglify())
-        .pipe(gulp.dest('src/dist/js/'));
+        .pipe(gulp.dest('app/js/'));
 });
