@@ -1,6 +1,7 @@
 {
     "version": "1.0.0",
     "summary": "A playground for running an elm app with electorn",
+    "repository": "https://github.com/crevax/electron-playground.git",
     "license": "BSD3",
     "source-directories": [
         "."
