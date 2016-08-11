@@ -6,13 +6,10 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1 id="main"></h1>
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chrome <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <div id="app"></div>
     <script type="text/javascript" src="app.min.js"></script>
     <script>
-      const appContainer = document.getElementById("main");
+      const appContainer = document.getElementById("app");
       const Elm = require('./app.min.js');
       const app = Elm.Hello.embed(appContainer);
     </script>
