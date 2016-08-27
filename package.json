@@ -11,6 +11,7 @@
     "gulp-uglify": "1.5.4"
   },
   "scripts": {
+    "build": "elm-make src/elm-scripts/Main.elm --output=app/app.min.js",
     "dev": "./node_modules/.bin/electron ."
   },
   "author": "Christopher Davis",
