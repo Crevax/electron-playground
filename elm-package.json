@@ -4,7 +4,7 @@
     "repository": "https://github.com/crevax/electron-playground.git",
     "license": "BSD3",
     "source-directories": [
-        "."
+        "./src/elm-scripts"
     ],
     "exposed-modules": [],
     "dependencies": {
