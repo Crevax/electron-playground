@@ -31,7 +31,7 @@ type alias Model =
 
 
 type Msg
-    = GetVersions
+    = NoOp
 
 
 init : Flags -> ( Model, Cmd msg )
@@ -49,8 +49,8 @@ init flags =
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        GetVersions ->
-            ( { model | versions = model.versions }, Cmd.none )
+        NoOp ->
+            ( model, Cmd.none )
 
 
 view : Model -> Html a
